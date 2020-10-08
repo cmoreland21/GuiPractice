@@ -1,0 +1,35 @@
+import javax.swing.JOptionPane;
+
+public class GuiPractice
+{
+
+public static void main(String[]args)
+
+{
+	String firstName;
+	firstName = JOptionPane.showInputDialog("What is your first name?");
+	String middleName;
+	middleName = JOptionPane.showInputDialog("What is your middle name?");
+	String lastName;
+	lastName = JOptionPane.showInputDialog("What is your last name?");
+	int year;
+	String birthYear;
+	birthYear = JOptionPane.showInputDialog("What year were you born?");
+	year = Integer.parseInt(birthYear);
+	String birthMonth;
+	birthMonth = JOptionPane.showInputDialog("What month were you born?");
+	String birthDay;
+	birthDay = JOptionPane.showInputDialog("What day were you born on?");
+	int currentYear;
+	String currentDay;
+	currentDay = JOptionPane.showInputDialog("What is the current year?");
+	currentYear = Integer.parseInt(currentDay);
+	int age = currentYear - year + 1 ; 
+	
+	JOptionPane.showMessageDialog(null, "Hello " + firstName + " " + middleName + " " + lastName + "! " + "Happy " + age + " birthday on " + birthMonth + birthDay); 
+	System.exit(0); 
+	
+	
+}
+
+}
